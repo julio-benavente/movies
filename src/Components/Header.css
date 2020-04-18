@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: #101010;
+  background-image: url("https://lh3.googleusercontent.com/proxy/bh_ZLJFFsoN_uCkRAXnlq0ZSisyCnrRCiyxLRpCni6HcCfgXJrXPwESLcj-oF9Quo6n9lVTQHcXDKs5v0boA7SK854pwnIk_rF0Q_Foh");
+  background-position: top;
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  top: 3em;
+  width: 100%;
+  z-index: 5;
+}
+
+.header nav {
+  padding: 0 20%;
+  width: 100%;
+  height: 4em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .logo span.fa-camera-movie {
+  font-size: 3em;
+  color: #d54265;
+}
+
+.header nav .logo h1 {
+  display: inline-block;
+  color: #F7F7F7;
+  margin-left: 1em;
+  text-shadow: 2px 2px 4px #1A1A1A;
+}
+
+.header nav .logo h1 span {
+  color: #d54265;
+}
+
+.header nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header nav .nav-list .nav-link {
+  list-style: none;
+  margin-left: 1em;
+  padding: 0.5em 1em;
+  color: #F7F7F7;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.header nav .nav-list .nav-link.active {
+  background: #993bb1;
+  border-radius: 100px;
+}
+
+.header nav .nav-list .nav-link:not(.active):hover {
+  background: #da8add;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=Header.css.map */

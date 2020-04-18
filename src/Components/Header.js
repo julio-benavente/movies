@@ -9,7 +9,7 @@ export default class Header extends Component {
             <div className = "header">
                 <nav>
                     <div className="logo">
-                        <span className="fal fa-camera-movie"></span>
+                        <span className="far fa-camera-movie"></span>
                         <h1>Movie <span>Planet</span></h1>
                     </div>  
                     <ul className = "nav-list">

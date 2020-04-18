@@ -4,6 +4,7 @@
 	position: absolute;
 	top: 3em;
 	width: 100%;
+	z-index: 5;
 	
 	
 	nav {
@@ -17,13 +18,14 @@
 		align-items: center;
 
 		.logo {
-			span.fal {
+			span.fa-camera-movie {
 				font-size: 3em;
+				color: $red;
 			}
 			h1 {
 				display: inline-block;
 				color: $white;
-				margin-left: 1.5em;
+				margin-left: 1em;
 				text-shadow: 2px 2px 4px $gray;
 
 				span {
