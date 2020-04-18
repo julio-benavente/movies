@@ -1,0 +1,33 @@
+// Variables
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+$background : #101010;
+$gray : #1A1A1A;
+$gray1 : #1D1D1D;
+$gray2 : #171717;
+$white : #F7F7F7;
+$gold : #BDAE8F;
+$purple : #993bb1;
+$light-purple : #da8add;
+$red : #d54265;
+$easeio : 250ms ease-in-out;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: $background;
+    background-image: url("https://lh3.googleusercontent.com/proxy/bh_ZLJFFsoN_uCkRAXnlq0ZSisyCnrRCiyxLRpCni6HcCfgXJrXPwESLcj-oF9Quo6n9lVTQHcXDKs5v0boA7SK854pwnIk_rF0Q_Foh");
+    background-position: top;
+    background-size: cover;
+
+    
+}
