@@ -1,4 +1,114 @@
-@import "../Variables.scss";
+@import '../../Variables';
+
+
+// Header
+
+.header {
+	position: absolute;
+	top: 3em;
+	width: 100%;
+	z-index: 5;
+	
+	nav {
+		padding: 0 20%;
+		width: 100%;
+		height: 4em;
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			span.fa-camera-movie {
+				font-size: 3em;
+				color: $red;
+			}
+			h1 {
+				display: inline-block;
+				color: $white;
+				margin-left: 1em;
+				text-shadow: 2px 2px 4px $gray;
+
+				span {
+					color: $red;
+				}
+			}
+		}
+
+		.nav-list {
+			display: flex;
+
+
+			.nav-link {
+				list-style: none;
+				margin-left: 1em;
+				padding: 0.5em 1em;
+				color: $white;
+				font-size: 14px;
+				cursor: pointer;
+				transition: $easeio;
+
+				&.active {
+					background: $purple;
+					border-radius: 100px;
+					
+				}
+
+				&:not(.active):hover {
+					background: $light-purple;
+					border-radius: 100px;
+
+				}
+				
+			}
+		}
+
+	}
+    
+}
+
+
+
+// Hero
+
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    & > .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .4;
+        z-index: 2;
+    }
+    
+    .heroCardWraper {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+        z-index: 3;
+    }
+}
+
+
+
+
+// Hero Card
 
 .heroCard {
     position: relative;
@@ -15,7 +125,7 @@
         display: grid;
         grid-template-columns: 5fr 7fr;
         border-radius: 10px;
-        box-shadow: 0 10px 20px $gray2;
+        box-shadow: 0 10px 20px $light-gray;
 
         .postWraper {
             position: relative;

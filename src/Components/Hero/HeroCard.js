@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './HeroCard.scss'
+import './Hero.scss'
 
 export default class HeroCard extends Component {
     render() {

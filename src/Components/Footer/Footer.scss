@@ -1,0 +1,113 @@
+@import "../../Variables.scss";
+
+.footer {
+    width: 100%;
+    // min-height: 100vh;
+    background: $background;
+    position: relative;
+    padding: 3em 25% 2em;
+    color: $text1;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 1px;
+        background: $text1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icons {
+        font-size: 30px;
+        color: $text1;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+
+        span {
+            cursor: pointer;
+            display: inline-block;
+            transition: $easeio;
+
+            &:hover {
+                color : $light-gray;
+            }
+
+            &:not(:nth-last-child(1)) {
+                margin: 0 1em 0em 0;
+            }
+        }
+    }
+
+    .footerLinks {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2em;
+
+        span {
+            display: inline-block;
+            margin: 0 2em 1em 0;
+            font-size: 13px;
+            color: $text1;
+            cursor: pointer;
+            transition: $easeio;
+            
+            &:hover {
+                color: $light-gray;
+            }
+        }
+    }
+
+    .storeWraper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        .store {
+            display: grid;
+            grid-template-columns: 40px auto;
+            margin: 0 0 2em 0;
+            padding: 0.5em 0.5em;
+            background-color: $gray1;
+            color: $text1;
+            justify-items: center;
+            align-items: center;
+            cursor: pointer;
+            transition : $easeio;
+
+            &:nth-child(1) {
+                margin-right: 2em;
+            }
+            span {
+                font-size: 1.5em;    
+            }
+
+            .description {
+                p:nth-child(1) {
+                    font-size: 10px;
+                }
+                p:nth-child(2) {
+                    font-size: 16px;
+                }
+             }
+
+            &:hover {
+                color : $light-gray;
+            }
+        }
+    }
+
+    .copyright {
+        width: calc(100% - 50%);
+        justify-content: start;
+        position: absolute;
+        left: 10%;
+        font-size: 12px;
+    }
+
+
+}
