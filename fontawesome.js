@@ -5,10 +5,10 @@ window.FontAwesomeKitConfig = {
     "autoA11y": {
         "enabled": true
     },
-    "baseUrl": "https://kit-pro.fontawesome.com",
+    "baseUrl": "https://kit-free.fontawesome.com",
     "detectConflictsUntil": null,
-    "license": "pro",
-    "method": "css",
+    "license": "free",
+    "method": "js",
     "minify": {
         "enabled": true
     },
@@ -78,7 +78,7 @@ window.FontAwesomeKitConfig = {
     }
     var d = function (e, t) {
             var n = document.createElement("link");
-            n.href = e, n.media = "all", n.rel = "stylesheet", n.id = "font-awesome-5-kit-css", t && t.detectingConflicts && t.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(t.detectionIgnoreAttr)), document.getElementsByTagName("head")[0].appendChild(n)
+            n.href = e, n.media = "all", n.rel = "stylesheet", t && t.detectingConflicts && t.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(t.detectionIgnoreAttr)), document.getElementsByTagName("head")[0].appendChild(n)
         },
         c = function (e, t) {
             ! function (e, t) {
